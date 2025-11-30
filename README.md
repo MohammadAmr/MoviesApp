@@ -53,12 +53,9 @@ https://image.tmdb.org/t/p/w500/<posterPath>
 Add your API key:
 ```swift
 let client = TMDBClient(apiKey: "<YOUR_API_KEY>")
-
----
-
+```
 ## 📌 6️⃣ `06_Persistence.md`
 
-```md
 # 🗃 Persistence (Favorites)
 
 Favorites are stored locally using **Core Data**:
@@ -66,3 +63,20 @@ Favorites are stored locally using **Core Data**:
 - Each movie has `isFavorite: Bool`
 - Data persists across app relaunches
 - When the user toggles favorite in the detail screen, the list updates automatically using Combine publishers
+
+# 🧪 Unit Tests
+
+Unit testing focuses on **ViewModel logic**, not UI.
+
+Tools used:
+| Tool | Purpose |
+|------|---------|
+| XCTest | Unit testing |
+| Fake Repository | Replaces API & Core Data in tests |
+| Combine | Observe `@Published` updates |
+
+Tests validate:
+- Pagination updates movie list
+- MovieDetailViewModel loads movie details correctly
+- Favoriting updates ViewModel state and calls repository
+
