@@ -16,7 +16,6 @@ struct AppDependencies {
     init() {
         let coreDataStack = CoreDataStack.shared
 
-        // Put your real TMDB API key here
         let client = TMDBClient(apiKey: "becc2eeef73fb53b27cc10dce2099f39")
 
         let repository = MoviesRepository(
