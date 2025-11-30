@@ -161,7 +161,6 @@ final class MovieTableViewCell: UITableViewCell {
             dateIcon.heightAnchor.constraint(equalToConstant: 14)
         ])
 
-        // Make sure favorite button is on top visually & for touch
         cardView.bringSubviewToFront(favoriteButton)
     }
 

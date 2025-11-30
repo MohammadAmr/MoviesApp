@@ -42,7 +42,6 @@ extension MovieEntity {
         releaseDate = dto.releaseDate
         originalLanguage = dto.originalLanguage
         overview = dto.overview
-        // isFavorite stays as is
     }
 
     func update(from dto: MovieDetailDTO) {
@@ -53,6 +52,5 @@ extension MovieEntity {
         releaseDate = dto.releaseDate
         originalLanguage = dto.originalLanguage
         overview = dto.overview
-        // isFavorite stays
     }
 }

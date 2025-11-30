@@ -46,7 +46,6 @@ final class MoviesViewController: UIViewController {
     }
 
     private func bindViewModel() {
-        // Movies -> reload table
         viewModel.$movies
             .receive(on: RunLoop.main)
             .sink { [weak self] _ in
@@ -54,7 +53,6 @@ final class MoviesViewController: UIViewController {
             }
             .store(in: &cancellables)
 
-        // Errors -> show alert
         viewModel.$errorMessage
             .compactMap { $0 }
             .receive(on: RunLoop.main)

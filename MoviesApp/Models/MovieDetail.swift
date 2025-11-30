@@ -22,7 +22,7 @@ extension MovieDetail {
         self.id = Int(entity.id)
         self.title = entity.title
         self.posterPath = entity.posterPath
-        self.backdropPath = nil    // not stored, can extend if you want
+        self.backdropPath = nil
         self.voteAverage = entity.voteAverage
         self.releaseDate = entity.releaseDate
         self.originalLanguage = entity.originalLanguage
