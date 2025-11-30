@@ -54,7 +54,6 @@ Add your API key:
 ```swift
 let client = TMDBClient(apiKey: "<YOUR_API_KEY>")
 ```
-## 📌 6️⃣ `06_Persistence.md`
 
 # 🗃 Persistence (Favorites)
 
